@@ -15,3 +15,13 @@
         threads: 100,
         timeout: 1000
     })
+
+## Options
+
+    {
+        input: // Path to proxies text file. Required
+        output: // Path to saved proxies text file. Required
+        url: // Url to test proxies against. Required
+        threads: //Amount of threads to run. Required
+        timeout: //Time to wait before closing connection. Required
+    }
