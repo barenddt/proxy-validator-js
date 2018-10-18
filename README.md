@@ -11,7 +11,7 @@
     proxyValidator({
         input: "path/to/proxies.txt",
         output: "path/to/newProxies.txt",
-        url: "http://example.com/", //URL to test against,
+        url: "http://example.com/",
         threads: 100,
         timeout: 1000
     })
@@ -22,6 +22,6 @@
         input: // Path to proxies text file. Required
         output: // Path to saved proxies text file. Required
         url: // Url to test proxies against. Required
-        threads: //Amount of threads to run. Required
-        timeout: //Time to wait before closing connection. Required
+        threads: // Amount of threads to run. Required
+        timeout: // Time to wait before closing connection. Required
     }
