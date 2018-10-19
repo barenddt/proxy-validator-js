@@ -24,7 +24,7 @@ module.exports = config => {
     }
   });
 
-  async function loop(split, thread, done) {
+  async const loop = (split, thread, done) => {
     for (var y = split * thread - split; y <= split * thread; y++) {
       let ip_port = proxies[y].split(":");
 
@@ -40,7 +40,7 @@ module.exports = config => {
             fs.appendFile(
               config.output,
               `${ip_port[0]}:${ip_port[1]}\n`,
-              function(err) {
+              (err) => {
                 if (err) throw err;
                 console.log(`Saved: ${ip_port[0]}:${ip_port[1]}`);
               }
