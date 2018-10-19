@@ -24,7 +24,7 @@ module.exports = config => {
     }
   });
 
-  async function loop(split, thread, done) {
+  const loop = async (split, thread, done) => {
     for (var y = split * thread - split; y <= split * thread; y++) {
       let ip_port = proxies[y].split(":");
 
@@ -52,5 +52,5 @@ module.exports = config => {
       });
     }
     done();
-  }
+  };
 };
