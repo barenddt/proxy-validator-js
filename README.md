@@ -5,8 +5,7 @@
     yarn add mass-proxy-validator
 
 ## Example
-
-    ```javascript
+```javascript
     const proxyValidator = require('mass-proxy-validator')
 
     proxyValidator({
@@ -16,7 +15,7 @@
         threads: 100,
         timeout: 1000
     })
-    ```
+```
 
 ## Options
 
