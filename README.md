@@ -30,7 +30,7 @@ proxyValidator({
 
 ```javascript
 {
-  input: "proxies.txt";
+  input: "proxies.txt",
   /* Path to proxies .txt file.
       Format of proxies file should look like this.
 
@@ -43,18 +43,18 @@ proxyValidator({
       ...
     */
 
-  output: "newProxies.txt";
+  output: "newProxies.txt",
   /* Path of .txt file to append to.
       If it does not exist it will be created.
     */
 
-  url: "http://example.com/";
+  url: "http://example.com/",
   // Url to test proxies against.
 
-  threads: 100;
+  threads: 100,
   // Amount of threads to run.
 
-  timeout: 2000;
+  timeout: 2000
   // Time to wait before closing connection.
 }
 ```
