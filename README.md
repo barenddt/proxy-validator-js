@@ -6,7 +6,7 @@ Using NPM:
 $ npm i mass-proxy-validator
 ```
 
-Using Yarn
+Using Yarn:
 
 ```
 $ yarn add mass-proxy-validator
