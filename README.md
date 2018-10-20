@@ -1,8 +1,14 @@
 ## Install
 
-    npm i mass-proxy-validator
-    -- or
-    yarn add mass-proxy-validator
+```
+npm i mass-proxy-validator
+```
+
+or
+
+```
+yarn add mass-proxy-validator
+```
 
 ## Example
 
