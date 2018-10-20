@@ -30,10 +30,31 @@ proxyValidator({
 
 ```javascript
 {
-    input: // Path to proxies text file. Required
-    output: // Path to saved proxies text file. Required
-    url: // Url to test proxies against. Required
-    threads: // Amount of threads to run. Required
-    timeout: // Time to wait before closing connection. Required
+  input: "proxies.txt";
+  /* Path to proxies .txt file.
+      Format of proxies file should look like this.
+
+      ...
+      96.9.88.54:31447
+      96.9.73.80:45984
+      96.65.123.249:8118
+      95.87.210.100:50451
+      95.86.40.170:53281
+      ...
+    */
+
+  output: "newProxies.txt";
+  /* Path of .txt file to append to.
+      If it does not exist it will be created.
+    */
+
+  url: "http://example.com/";
+  // Url to test proxies against.
+
+  threads: 100;
+  // Amount of threads to run.
+
+  timeout: 2000;
+  // Time to wait before closing connection.
 }
 ```
